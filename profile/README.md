@@ -1,10 +1,6 @@
 <p align="center">
   <a href="https://github.com/OpenFrontierLabs/openfrontier">
-    <picture>
-      <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/OpenFrontierLabs/.github/main/profile/assets/logo-dark.svg">
-      <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/OpenFrontierLabs/.github/main/profile/assets/logo-light.svg">
-      <img alt="Open Frontier Labs" src="https://raw.githubusercontent.com/OpenFrontierLabs/.github/main/profile/assets/logo-dark.svg" width="400">
-    </picture>
+    <img alt="Open Frontier Labs" src="https://raw.githubusercontent.com/OpenFrontierLabs/.github/main/profile/assets/logo.png" width="200">
   </a>
 </p>
 
@@ -35,6 +31,6 @@ Data recipes, code, configs, training logs, intermediate checkpoints and final w
 - **Contribute code:** see [CONTRIBUTING](https://github.com/OpenFrontierLabs/openfrontier/blob/main/CONTRIBUTING.md).
 - **Contribute compute:** see [docs/join-a-node.md](https://github.com/OpenFrontierLabs/openfrontier/blob/main/docs/join-a-node.md), or open a [compute offer](https://github.com/OpenFrontierLabs/openfrontier/issues/new/choose).
 - **Build RL environments:** environments for training and evaluating models are open work for anyone.
-- **Read the manifesto:** in the [openfrontier repo](https://github.com/OpenFrontierLabs/openfrontier).
+- **Read the manifesto:** [MANIFESTO.md](https://github.com/OpenFrontierLabs/openfrontier/blob/main/MANIFESTO.md).
 
 Start at **[OpenFrontierLabs/openfrontier](https://github.com/OpenFrontierLabs/openfrontier)**.
