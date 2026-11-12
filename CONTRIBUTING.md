@@ -5,7 +5,7 @@ Open Frontier Labs is community-built and everything is public. Contributions of
 ## Ways to help
 
 - **Code:** pick an open issue or propose one, then send a pull request.
-- **Compute:** offer GPUs with the [compute offer](../../issues/new/choose) form, or see `docs/join-a-node.md` in [openfrontier](https://github.com/OpenFrontierLabs/openfrontier).
+- **Compute:** offer GPUs with the [compute offer](https://github.com/OpenFrontierLabs/openfrontier/issues/new/choose) form, or see `docs/join-a-node.md` in [openfrontier](https://github.com/OpenFrontierLabs/openfrontier).
 - **RL environments and evals:** build them in the open and send them to the relevant repo.
 - **Docs and review:** fixes, clarifications and reading other people's pull requests all count.
 

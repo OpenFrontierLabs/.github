@@ -2,4 +2,4 @@ blank_issues_enabled: true
 contact_links:
   - name: Questions and discussion
     url: https://github.com/OpenFrontierLabs/openfrontier
-    about: Start at the openfrontier repo README and its Discussions.
+    about: Start at the openfrontier README and open an issue.
