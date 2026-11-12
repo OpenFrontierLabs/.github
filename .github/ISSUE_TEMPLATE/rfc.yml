@@ -1,0 +1,54 @@
+name: RFC proposal
+description: Propose a hard-to-reverse design decision before writing the full RFC
+title: "RFC: "
+labels: ["type/rfc", "needs-triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        RFCs are for decisions that are hard to undo: protocol messages, the ledger schema, licences, layer boundaries, the milestone ladder. Read the [RFC process](https://github.com/OpenFrontierLabs/openfrontier/blob/main/rfcs/README.md).
+        This issue gauges interest and finds reviewers. The RFC itself is a pull request adding `rfcs/NNNN-slug.md` from the [template](https://github.com/OpenFrontierLabs/openfrontier/blob/main/rfcs/0000-template.md).
+  - type: textarea
+    id: summary
+    attributes:
+      label: Summary
+      description: One paragraph a newcomer could follow.
+    validations:
+      required: true
+  - type: textarea
+    id: motivation
+    attributes:
+      label: Motivation
+      description: What is missing or wrong today, with links to code, issues or papers.
+    validations:
+      required: true
+  - type: textarea
+    id: sketch
+    attributes:
+      label: Proposed design (sketch)
+  - type: textarea
+    id: irreversible
+    attributes:
+      label: Why it needs an RFC
+      description: What becomes hard to change once this ships?
+    validations:
+      required: true
+  - type: checkboxes
+    id: layers
+    attributes:
+      label: Layers affected
+      options:
+        - label: "1 Hardware"
+        - label: "2 Node"
+        - label: "3 Network"
+        - label: "4 Training"
+        - label: "5 Storage and evidence"
+        - label: "6 Console"
+        - label: "7 Hosting"
+        - label: "8 Outputs and evals"
+  - type: checkboxes
+    id: author
+    attributes:
+      label: Authoring
+      options:
+        - label: I intend to write the RFC pull request.
