@@ -1,5 +1,14 @@
-blank_issues_enabled: true
+blank_issues_enabled: false
 contact_links:
-  - name: Questions and discussion
-    url: https://github.com/OpenFrontierLabs/openfrontier
-    about: Start at the openfrontier README and open an issue.
+  - name: Questions (Q&A)
+    url: https://github.com/OpenFrontierLabs/openfrontier/discussions/categories/q-a
+    about: Ask how something works or how to get started.
+  - name: Ideas
+    url: https://github.com/OpenFrontierLabs/openfrontier/discussions/categories/ideas
+    about: Float an idea before it becomes an issue or an RFC.
+  - name: Discord
+    url: https://discord.gg/M4sD8T5M8D
+    about: Chat with contributors in real time. Say hi in #introductions.
+  - name: Security vulnerability
+    url: https://github.com/OpenFrontierLabs/openfrontier/security/advisories/new
+    about: Report privately. Never in a public issue.

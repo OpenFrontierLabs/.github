@@ -13,7 +13,8 @@ Open Frontier Labs is community-built and everything is public. Contributions of
 
 1. Fork the repo, branch, make a focused change.
 2. Say what and why in the PR, and how you tested it.
-3. Keep discussion in public issues and PRs.
+3. Sign off every commit (`git commit -s`): we use the [DCO](https://developercertificate.org/), not a CLA.
+4. Keep discussion in public issues and PRs. Agent-written work carries `Agent: <agent> / <model>` and the `agent-authored` label.
 
 Anyone who lands merged work earns commit rights on that repo.
 

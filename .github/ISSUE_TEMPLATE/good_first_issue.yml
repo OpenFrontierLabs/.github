@@ -1,0 +1,45 @@
+name: Good first issue (maintainers)
+description: A scoped starter task with context, definition of done and pointers
+labels: ["good first issue", "help wanted"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        For maintainers writing starter tasks. A newcomer should be able to open a draft PR within an afternoon from this issue alone.
+        Add one `layer/*` and the `area/*` labels after creating it.
+  - type: textarea
+    id: context
+    attributes:
+      label: Context
+      description: Why this matters and where it fits in the architecture or roadmap.
+    validations:
+      required: true
+  - type: textarea
+    id: task
+    attributes:
+      label: Task
+      description: What to change, concretely.
+    validations:
+      required: true
+  - type: textarea
+    id: done
+    attributes:
+      label: Definition of done
+      description: Checklist a reviewer can verify.
+      value: |
+        - [ ] 
+        - [ ] `make check` and `make test` pass
+    validations:
+      required: true
+  - type: textarea
+    id: pointers
+    attributes:
+      label: Pointers
+      description: Files, functions, docs, papers and the Discord channel to ask in.
+    validations:
+      required: true
+  - type: input
+    id: skills
+    attributes:
+      label: Skills
+      placeholder: Python, networking

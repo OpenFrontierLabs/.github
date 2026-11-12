@@ -1,16 +1,62 @@
 name: Bug report
-description: Something is broken or behaves unexpectedly
-labels: ["bug"]
+description: Something is broken or behaves differently from what the docs say
+labels: ["type/bug", "needs-triage"]
 body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reporting. Security problems go [privately](https://github.com/OpenFrontierLabs/openfrontier/security/advisories/new), not here.
+        A doc that claims something the code does not do is a bug too.
   - type: textarea
     id: what
     attributes:
       label: What happened?
-      description: Include what you expected and the steps to reproduce.
+      description: What you did, what you expected, and what happened instead.
     validations:
       required: true
+  - type: textarea
+    id: repro
+    attributes:
+      label: Steps to reproduce
+      description: Exact commands, starting from a clean checkout if you can.
+      placeholder: |
+        make setup
+        uv run ofl doctor
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: Output
+      description: Relevant log output. Remove tokens and personal paths.
+      render: shell
   - type: textarea
     id: env
     attributes:
       label: Environment
-      description: OS, GPU and driver, versions or commit.
+      description: Output of `make doctor` if it runs, otherwise OS, GPU and driver, Python version and commit SHA.
+      render: text
+    validations:
+      required: true
+  - type: dropdown
+    id: layer
+    attributes:
+      label: Layer
+      description: Best guess is fine.
+      options:
+        - "Not sure"
+        - "1 Hardware (ofl doctor)"
+        - "2 Node"
+        - "3 Network"
+        - "4 Training"
+        - "5 Storage and evidence"
+        - "6 Console / website"
+        - "7 Hosting"
+        - "8 Outputs and evals"
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Checks
+      options:
+        - label: I searched existing issues and this is not a duplicate.
+          required: true

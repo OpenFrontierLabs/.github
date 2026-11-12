@@ -1,21 +1,56 @@
-name: Compute offer
-description: Offer GPUs or other compute to Open Frontier Labs
-labels: ["compute"]
+name: Compute donor offer
+description: Offer GPUs, a node or a donated cluster (an island) for training runs
+title: "Compute offer: "
+labels: ["type/compute-offer", "needs-triage"]
 body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you. Today only single-node phase 1 runs can use donated compute; joining a shared DiLoCo run is not built yet ([what works today](https://github.com/OpenFrontierLabs/openfrontier/blob/main/docs/join-a-node.md)).
+        Every donor is credited by GitHub handle in the public [compute ledger](https://github.com/OpenFrontierLabs/openfrontier/blob/main/ledger/README.md). No money values are published.
+        Do not post credentials, IP addresses or access keys here; we arrange access privately.
+  - type: dropdown
+    id: kind
+    attributes:
+      label: What are you offering?
+      options:
+        - "One machine I run myself (a node)"
+        - "A cluster to train as an island"
+        - "Cloud credits or GPU-hours"
+        - "Other"
+    validations:
+      required: true
   - type: textarea
     id: hardware
     attributes:
       label: Hardware
-      description: GPU model and count, CPU, RAM, storage.
+      description: GPU model and count, VRAM, CPU, RAM, storage. Paste `make doctor` output if you can run it.
+      render: text
     validations:
       required: true
   - type: textarea
     id: network
     attributes:
-      label: Network and availability
-      description: Bandwidth, location or region, and when the machines are available.
+      label: Network and location
+      description: Bandwidth up and down, and country or region.
+    validations:
+      required: true
   - type: textarea
+    id: availability
+    attributes:
+      label: Availability
+      description: When and for how long, and any limits (hours per day, power, noise).
+    validations:
+      required: true
+  - type: input
+    id: credit
+    attributes:
+      label: Credit as
+      description: GitHub handle or organisation name to credit in the ledger and model cards.
+  - type: checkboxes
     id: terms
     attributes:
-      label: Anything else
-      description: Constraints on how the compute may be used, or questions.
+      label: Understood
+      options:
+        - label: Nodes run only code from Open Frontier Labs repositories, never code received from the network, and I can stop at any time.
+          required: true

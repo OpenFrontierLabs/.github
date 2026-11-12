@@ -1,0 +1,35 @@
+name: Documentation
+description: Something is missing, wrong or unclear in the docs
+labels: ["type/docs", "area/docs", "needs-triage"]
+body:
+  - type: input
+    id: where
+    attributes:
+      label: Page or file
+      description: Link or path, e.g. docs/run0.md
+    validations:
+      required: true
+  - type: dropdown
+    id: kind
+    attributes:
+      label: Problem
+      options:
+        - "Wrong: the doc says something the code does not do"
+        - "Missing: something should be documented"
+        - "Unclear: hard to follow"
+        - "Translation"
+    validations:
+      required: true
+  - type: textarea
+    id: detail
+    attributes:
+      label: Details
+      description: What it says now and what it should say.
+    validations:
+      required: true
+  - type: checkboxes
+    id: help
+    attributes:
+      label: Contribution
+      options:
+        - label: I would like to fix this myself.
