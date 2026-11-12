@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="150 -10 500 500" width="256" height="256" preserveAspectRatio="xMidYMid meet" role="img" aria-label="Open Frontier Labs mark">
+  <defs><filter id="g" x="-20%" y="-50%" width="140%" height="200%"><feGaussianBlur stdDeviation="9"/></filter></defs>
+  <g filter="url(#g)" opacity=".9"><path d="M200 210Q400 50 600 210" fill="none" stroke="#66E36E" stroke-width="7" stroke-linecap="round"/></g>
+  <path d="M200 210Q400 50 600 210" fill="none" stroke="#1B7F46" stroke-width="4" stroke-linecap="round"/>
+  <path d="M400 140l4.5 13.5 13.5 4.5-13.5 4.5-4.5 13.5-4.5-13.5-13.5-4.5 13.5-4.5z" fill="#0B0E0D"/>
+  <path d="M396 200L205 346M404 200L595 346" stroke="#0B0E0D" stroke-width="4" stroke-linecap="round"/>
+  <path d="M400 210V346" stroke="#0B0E0D" stroke-width="4" stroke-dasharray="3 14 9 20 16 28" opacity=".8" stroke-linecap="butt"/>
+</svg>
