@@ -1,0 +1,21 @@
+name: Compute offer
+description: Offer GPUs or other compute to Open Frontier Labs
+labels: ["compute"]
+body:
+  - type: textarea
+    id: hardware
+    attributes:
+      label: Hardware
+      description: GPU model and count, CPU, RAM, storage.
+    validations:
+      required: true
+  - type: textarea
+    id: network
+    attributes:
+      label: Network and availability
+      description: Bandwidth, location or region, and when the machines are available.
+  - type: textarea
+    id: terms
+    attributes:
+      label: Anything else
+      description: Constraints on how the compute may be used, or questions.
