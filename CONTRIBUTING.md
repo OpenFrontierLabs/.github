@@ -20,7 +20,7 @@ Anyone who lands merged work earns commit rights on that repo.
 
 ## Reviews and bots
 
-Every PR is checked by DCO (required), and reviewed automatically by CodeRabbit, CodeQL and SonarQube Cloud (none of these three is required). A housekeeping bot labels PRs and handles `/assign` and `/unassign` on issues. The full list is in the [openfrontier CONTRIBUTING.md](https://github.com/OpenFrontierLabs/openfrontier/blob/main/CONTRIBUTING.md#what-reviews-a-pull-request).
+Every PR is checked by DCO (required), and reviewed automatically by CodeRabbit, CodeQL and SonarQube Cloud (none of these three is required). CodeRabbit skips drafts and may wait for a manual `@coderabbitai review` comment on small repositories. A housekeeping bot labels PRs and handles `/assign` and `/unassign` on issues. The full list is in the [openfrontier CONTRIBUTING.md](https://github.com/OpenFrontierLabs/openfrontier/blob/main/CONTRIBUTING.md#what-reviews-a-pull-request).
 
 ## Licensing
 
