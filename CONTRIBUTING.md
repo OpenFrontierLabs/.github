@@ -18,6 +18,10 @@ Open Frontier Labs is community-built and everything is public. Contributions of
 
 Anyone who lands merged work earns commit rights on that repo.
 
+## Reviews and bots
+
+Every PR is checked by DCO (required), and reviewed automatically by CodeRabbit, CodeQL and SonarQube Cloud (none of these three is required). A housekeeping bot labels PRs and handles `/assign` and `/unassign` on issues. The full list is in the [openfrontier CONTRIBUTING.md](https://github.com/OpenFrontierLabs/openfrontier/blob/main/CONTRIBUTING.md#what-reviews-a-pull-request).
+
 ## Licensing
 
 Contributions to code and weights are licensed under Apache-2.0. Datasets and logs we author are CC-BY-4.0. By contributing you confirm you have the right to submit the work under these terms.
