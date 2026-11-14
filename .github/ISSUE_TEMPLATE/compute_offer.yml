@@ -52,5 +52,5 @@ body:
     attributes:
       label: Understood
       options:
-        - label: Nodes run only code from Open Frontier Labs repositories, never code received from the network, and I can stop at any time.
+        - label: "Nodes run only code from Open Frontier Labs repositories, never code received from the network, and I can stop at any time. Node telemetry (when built with `OFL_SENTRY_DSN`) is opt-out and sends error reports only — opt out with `--no-telemetry`, `OFL_TELEMETRY=0`, or `DO_NOT_TRACK=1` (local source builds without a DSN send nothing); see [docs/telemetry.md](https://github.com/OpenFrontierLabs/openfrontier/blob/main/docs/telemetry.md)."
           required: true
